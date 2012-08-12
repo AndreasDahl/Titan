@@ -7,10 +7,12 @@
 <fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="main.GameWindow.noget"/>
-<fullyQualifiedTypeName name="gfx.GamePanel"/>
 <fullyQualifiedTypeName name="java.awt.Dimension"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="controller.InputHandler"/>
 <fullyQualifiedTypeName name="controller.Key"/>
 <fullyQualifiedTypeName name="java.awt.event.KeyEvent"/>
+<fullyQualifiedTypeName name="gfx.GamePanel"/>
+<fullyQualifiedTypeName name="logic.Game"/>
+<fullyQualifiedTypeName name="gfx.GameWindow"/>
 </qualifiedTypeNameHistroy>

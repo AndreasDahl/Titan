@@ -9,6 +9,7 @@ public class InputHandler implements KeyListener {
 	private HashMap<Integer, ArrayList<Key>> keys = new HashMap<Integer, ArrayList<Key>>();
 	
 	public InputHandler() {
+		super();
 	}
 	
 	@Override
