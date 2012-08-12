@@ -35,3 +35,16 @@ Command-line arguments:  -data C:\Users\Anders\Documents\GitHub\Titan -os win32 
 
 !ENTRY org.eclipse.jdt.launching 4 150 2012-08-12 16:35:33.389
 !MESSAGE The archive: /TitanGame/LoegEngine.jar which is referenced by the classpath, does not exist.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-08-12 17:01:57.079
+!MESSAGE Failed to open search index.
+!SESSION 2012-08-12 17:18:59.255 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.6.0_33
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=da_DK
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-08-12 17:19:09.838
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
