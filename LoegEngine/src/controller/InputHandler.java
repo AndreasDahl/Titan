@@ -4,6 +4,8 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class InputHandler implements KeyListener {
 	private HashMap<Integer, ArrayList<Key>> keys = new HashMap<Integer, ArrayList<Key>>();
@@ -53,5 +55,14 @@ public class InputHandler implements KeyListener {
 				key.clear();
 			}
 		}
+	}
+
+	public Set<Key> getKeys() {
+		HashSet<Key> keySet = new HashSet<Key>();
+		
+		for (ArrayList<Key> keyList : keys.values()) {
+			keySet.addAll(keyList);
+		}
+		return keySet;
 	}
 }

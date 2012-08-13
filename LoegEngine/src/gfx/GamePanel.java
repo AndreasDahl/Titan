@@ -135,7 +135,7 @@ public class GamePanel extends Canvas implements Runnable {
 		
 		if (activeComponent != null)
 			activeComponent.render(screen);
-		
+			
 		Graphics g = bs.getDrawGraphics();
 		g.drawImage(image, 0, 0, getWidth(), getHeight(), null);
 		g.dispose();

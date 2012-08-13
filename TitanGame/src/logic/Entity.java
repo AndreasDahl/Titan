@@ -1,24 +1,34 @@
 package logic;
 
-public class Entity {
-	private int x;
-	private int y;
+import controller.InputHandler;
+import util.Point;
+
+public abstract class Entity {
+	private Point position;
+	
+	public Entity() {
+		position = new Point(0,0);
+	}
 	
 	public int getX() {
-		return x;
+		return position.getX();
 	}
 	
 	public int getY() {
-		return y;
+		return position.getY();
 	}
 	
 	public void setX(int x) {
-		this.x = x;
+		this.position.setX(x);
 	}
 	
 	public void setY(int y) {
-		this.y = y;
+		this.position.setY(y);
 	}
 	
-	public void tick() {}
+	public Point getPosition() {
+		return position;
+	}
+	
+	public void tick(InputHandler input) {}
 }

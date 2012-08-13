@@ -25,8 +25,6 @@ public class GameWindow extends GamePanel {
 		
 		initGame();
 		initControl();
-		
-		start();
 	}
 	
 	private void initGame() {
@@ -34,20 +32,24 @@ public class GameWindow extends GamePanel {
 		setComponent(game);
 	}
 	
-	private static void initControl() {
+	private void initControl() {
 		input = new InputHandler();
 		w = new Key(input, KeyEvent.VK_W);
 		a = new Key(input, KeyEvent.VK_A);
 		s = new Key(input, KeyEvent.VK_S);
 		d = new Key(input, KeyEvent.VK_D);
+		addKeyListener(input);
+		setInputHandler(input);
 	}
 	
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		GamePanel gf = new GamePanel(WIDTH, HEIGHT);
-		frame.add(gf);
+		GamePanel gp = new GameWindow(WIDTH, HEIGHT);
+		frame.add(gp);
 		frame.pack();
 		frame.setVisible(true);
+		frame.addKeyListener(input);
+		gp.start();
 	}
 }

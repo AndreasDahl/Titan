@@ -8,6 +8,5 @@ public class GameComponent {
 	}
 	
 	public void render(Screen screen) {
-		
 	}
 }

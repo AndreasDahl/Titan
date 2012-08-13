@@ -23,4 +23,14 @@ public class Point {
 	public void setY(int y) {
 		this.y = y;
 	}
+	
+	public Point translate(int xt, int yt) {
+		x += xt;
+		y += yt;
+		return this;
+	}
+	
+	public Point translate(Point otherPoint) {
+		return translate(otherPoint.x, otherPoint.y);
+	}
 }

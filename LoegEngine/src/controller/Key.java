@@ -3,9 +3,9 @@ package controller;
 import java.util.LinkedList;
 
 public class Key {
-	public LinkedList<Boolean> nextState;
-	public boolean wasDown = false;
-	public boolean isDown = false;
+	private LinkedList<Boolean> nextState;
+	private boolean wasDown = false;
+	private boolean isDown = false;
 
 	public Key(InputHandler handler, int keyCode) {
 		nextState = new LinkedList<Boolean>();
@@ -19,7 +19,9 @@ public class Key {
 
 	public void tick() {
 		wasDown = isDown;
-		boolean state = nextState.removeFirst();
+		boolean state = false;
+		if (!nextState.isEmpty())
+			state = nextState.removeFirst();
 		if (state)
 			isDown = state;
 		else if (isDown && !state)

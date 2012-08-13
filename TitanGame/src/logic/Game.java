@@ -43,14 +43,16 @@ public class Game extends GameComponent {
 	public void tick(InputHandler input) {
 		super.tick(input);
 		
-		hero.tick();
+		hero.tick(input);
 	}
 	
 	@Override
 	public void render(Screen screen) {
+		super.render(screen);
+		
 		GamePanel gp = GamePanel.getInstance();
 		screen.renderSquare(0, 0, gp.getWidth(), gp.getHeight(), 0xff00ff00);
-		screen.render(hero.getX()*16, hero.getY()*16, sprite);
+		screen.render(hero.getX(), hero.getY(), sprite);
 		
 	}
 }

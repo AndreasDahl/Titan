@@ -28,26 +28,36 @@ public class Screen {
 	}
 	
 	private void paintPixelHue(int position, int color, double hue, double saturation) {
-		int trans = ((color >> 24) & 0xff);
-		if (trans == 0);
-		else if (trans == 0xff) {
-			color = Color.applyHue(color, hue, saturation);
-			pixels[position] = color;
-		}
-		else {
-			color = Color.applyHue(color, hue, saturation);
-			pixels[position] = applyTransparency(color, pixels[position]);
+		if (isValidPixel(position)) {
+			int trans = ((color >> 24) & 0xff);
+			if (trans == 0);
+			else if (trans == 0xff) {
+				color = Color.applyHue(color, hue, saturation);
+				pixels[position] = color;
+			}
+			else {
+				color = Color.applyHue(color, hue, saturation);
+				pixels[position] = applyTransparency(color, pixels[position]);
+			}
 		}
 	}
 	
+	private boolean isValidPixel(int pixel) {
+		if (pixel > 0 && pixel < pixels.length)
+			return true;
+		return false;
+	}
+	
 	private void paintPixel(int position, int color) {
-		int trans = ((color >> 24) & 0xff);
-		if (trans == 0);
-		else if (trans == 0xff)
-			pixels[position] = color;
-		else {
-			pixels[position] = applyTransparency(color, pixels[position]);
-		}		
+		if (isValidPixel(position)) {
+			int trans = ((color >> 24) & 0xff);
+			if (trans == 0);
+			else if (trans == 0xff)
+				pixels[position] = color;
+			else {
+				pixels[position] = applyTransparency(color, pixels[position]);
+			}
+		}
 	}
 	
 	/**
