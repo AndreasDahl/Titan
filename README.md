@@ -1,4 +1,4 @@
 Titan
 =====
 
-A little game
+A little game. The title is not decided yet.
