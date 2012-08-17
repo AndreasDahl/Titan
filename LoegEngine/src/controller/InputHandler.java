@@ -38,7 +38,7 @@ public class InputHandler implements KeyListener {
 		}
 	}
 	
-	protected void addToKeys(int keyEvent, Key key) {
+	public void addKey(int keyEvent, Key key) {
 		if (keys.containsKey(keyEvent)) {
 			keys.get(keyEvent).add(key);
 		}

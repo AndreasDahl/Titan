@@ -2,22 +2,30 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="javax.swing.JFrame"/>
 <fullyQualifiedTypeName name="gfx.GameComponent"/>
-<fullyQualifiedTypeName name="gfx.Screen"/>
-<fullyQualifiedTypeName name="gfx.Sprite"/>
 <fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="main.GameWindow.noget"/>
 <fullyQualifiedTypeName name="java.awt.Dimension"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="controller.Key"/>
 <fullyQualifiedTypeName name="java.awt.event.KeyEvent"/>
 <fullyQualifiedTypeName name="gfx.GamePanel"/>
 <fullyQualifiedTypeName name="logic.Game"/>
 <fullyQualifiedTypeName name="controller.InputHandler"/>
-<fullyQualifiedTypeName name="util.Point"/>
-<fullyQualifiedTypeName name="gfx.GameWindow"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.lang.Deprecated"/>
+<fullyQualifiedTypeName name="gfx.Screen"/>
+<fullyQualifiedTypeName name="util.Shape"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="gfx.GameWindow"/>
+<fullyQualifiedTypeName name="gfx.Renderable"/>
+<fullyQualifiedTypeName name="logic.Terrain"/>
+<fullyQualifiedTypeName name="gfx.Sprite"/>
+<fullyQualifiedTypeName name="gfx.Art"/>
+<fullyQualifiedTypeName name="util.Point"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
 </qualifiedTypeNameHistroy>

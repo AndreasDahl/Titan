@@ -14,8 +14,8 @@ public class GamePanel extends Canvas implements Runnable {
 	
 	private static GamePanel instance;
 	
-	private int width;
-	private int height;
+	private int screenWidth;
+	private int screenHeight;
 	
 	private int ticksPerSecond;
 	private int fps;
@@ -26,16 +26,20 @@ public class GamePanel extends Canvas implements Runnable {
 	private BufferedImage image;
 	private int[] pixels;
 	private Screen screen;
+	private int pixelScale = 1;
 	
 	private InputHandler gameControl;
 	private GameComponent activeComponent;
 	
 	public GamePanel(int width, int height) {
-		this.width = width;
-		this.height = height;
-		this.setPreferredSize(new Dimension(width, height));
-		image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-		pixels = ((DataBufferInt)image.getRaster().getDataBuffer()).getData();
+		this(width, height, 1);
+	}
+	
+	public GamePanel(int width, int height, int pixelScale) {
+		this.screenWidth = width;
+		this.screenHeight = height;
+		this.pixelScale = pixelScale;
+		this.setPreferredSize(new Dimension(width * pixelScale, height * pixelScale));
 		setTicksPerSecond(60);
 		
 		instance = this;
@@ -70,8 +74,14 @@ public class GamePanel extends Canvas implements Runnable {
 		running = false;
 	}
 	
-	public void init() {
-		screen = new Screen(pixels, width);
+	private void prepareScreen(int width, int height) {
+		image = new BufferedImage(screenWidth, screenHeight, BufferedImage. TYPE_INT_RGB);
+		pixels = ((DataBufferInt)image.getRaster().getDataBuffer()).getData();
+		screen = new Screen(pixels, screenWidth);
+	}
+			
+	private void init() {
+		prepareScreen(this.screenWidth, this.screenHeight);
 	}
 	
 	@Override
@@ -154,11 +164,11 @@ public class GamePanel extends Canvas implements Runnable {
 		return ticksPerSecond;
 	}
 	
-	public int getWidth() {
-		return width;
+	public int getScreenWidth() {
+		return screenWidth;
 	}
 	
-	public int getHeight() {
-		return height;
+	public int getScreenHeight() {
+		return screenHeight;
 	}
 }

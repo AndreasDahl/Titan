@@ -7,9 +7,8 @@ public class Key {
 	private boolean wasDown = false;
 	private boolean isDown = false;
 
-	public Key(InputHandler handler, int keyCode) {
+	public Key() {
 		nextState = new LinkedList<Boolean>();
-		handler.addToKeys(keyCode, this);
 	}
 
 	public void toggle(boolean press) {

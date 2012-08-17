@@ -1,10 +1,17 @@
-package logic;
+package logic.entity;
 
 import util.Point;
 import controller.InputHandler;
+import gfx.Art;
 import gfx.GameWindow;
+import gfx.Screen;
 
-public class Hero extends Entity {
+public class Hero extends Unit {
+
+	public Hero() {
+		super(1);
+	}
+	
 	public void moveTo(Point point) {
 //		int x = point.getX();
 //		int y = point.getX();
@@ -31,16 +38,22 @@ public class Hero extends Entity {
 		
 		while (GameWindow.w.next());
 		if (GameWindow.w.isPressed())
-			relativePoint.translate(0, -2);
+			relativePoint.translate(0, -1);
 		while (GameWindow.a.next());
 		if (GameWindow.a.isPressed())
-			relativePoint.translate(-2, 0);
+			relativePoint.translate(-1, 0);
 		while (GameWindow.s.next());
 		if (GameWindow.s.isPressed())
-			relativePoint.translate(0, 2);
+			relativePoint.translate(0, 1);
 		while (GameWindow.d.next());
 		if (GameWindow.d.isPressed())
-			relativePoint.translate(2, 0);
+			relativePoint.translate(1, 0);
 		moveTo(getPosition().translate(relativePoint));
+	}
+	
+	@Override
+	public void render(Screen screen) {
+		super.render(screen);
+		screen.renderWidthInvisColor(this.getX(), this.getY(), Art.HERO, 0xffffffff);
 	}
 }

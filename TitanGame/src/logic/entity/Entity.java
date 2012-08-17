@@ -1,5 +1,6 @@
-package logic;
+package logic.entity;
 
+import gfx.Screen;
 import controller.InputHandler;
 import util.Point;
 
@@ -31,4 +32,6 @@ public abstract class Entity {
 	}
 	
 	public void tick(InputHandler input) {}
+	
+	public void render(Screen screen) {}
 }

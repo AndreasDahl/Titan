@@ -1,42 +1,32 @@
 package logic;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.Random;
 
-import javax.imageio.ImageIO;
+import logic.entity.Hero;
 
 import controller.InputHandler;
 import gfx.GameComponent;
 import gfx.GamePanel;
+import gfx.GameWindow;
 import gfx.Screen;
-import gfx.Sprite;
 
 public class Game extends GameComponent {
-	private int[][] grid;
-	private Sprite sprite;
+	private Terrain[][] grid;
 	private Hero hero;
+	private static final int TILE_SIZE = 16;
 	
 	public Game() {
 		Random gridrand = new Random();
-		grid = new int[20][20];
+		grid = new Terrain[GameWindow.getInstance().getScreenWidth() / TILE_SIZE][GameWindow.getInstance().getScreenHeight() / TILE_SIZE];
 		for (int i = 0; i < grid.length; i++) {
 			for (int j = 0; j < grid.length; j++) {
-				grid[i][j] = gridrand.nextInt(3)*100 | 0xff000000;
+				grid[i][j] = new Grass();
 			}
 		}
 		
 		hero = new Hero();
 		
-		try {
-			File file = new File("res\\Hero.png");
-			System.out.println(file.getAbsolutePath());
-			
-			sprite = new Sprite(ImageIO.read(new File("res\\Hero.png")));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+
 	}
 	
 	@Override
@@ -51,8 +41,14 @@ public class Game extends GameComponent {
 		super.render(screen);
 		
 		GamePanel gp = GamePanel.getInstance();
-		screen.renderSquare(0, 0, gp.getWidth(), gp.getHeight(), 0xff00ff00);
-		screen.render(hero.getX(), hero.getY(), sprite);
+		
+		for (int i = 0; i < grid.length; i++) {
+			for (int j = 0; j < grid.length; j++) {
+				screen.render(i * TILE_SIZE, j * TILE_SIZE, grid[i][j].getSprite());
+			}
+		}
+		
+		hero.render(screen);
 		
 	}
 }

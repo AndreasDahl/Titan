@@ -1,11 +1,15 @@
 package gfx;
 
+import util.Color;
+
 public class Screen {
-	private int[] pixels;	
+	private int[] pixels;
+	private final int height;
 	private final int width;
 	
 	public Screen(int[] pixels, int width) {
 		this.width = width;
+		this.height = pixels.length / width;
 		this.pixels = pixels;
 	}
 
@@ -27,6 +31,7 @@ public class Screen {
 		return red | green | blue;
 	}
 	
+	@Deprecated
 	private void paintPixelHue(int position, int color, double hue, double saturation) {
 		if (isValidPixel(position)) {
 			int trans = ((color >> 24) & 0xff);
@@ -42,12 +47,24 @@ public class Screen {
 		}
 	}
 	
+	private void paintPixelHue(int x, int y, int color, double hue, double saturation) {
+		if (isOnScreen(x, y))
+			paintPixelHue(x + y * width, color, hue, saturation);
+	}
+	
 	private boolean isValidPixel(int pixel) {
-		if (pixel > 0 && pixel < pixels.length)
+		if (pixel >= 0 && pixel < pixels.length)
 			return true;
 		return false;
 	}
 	
+	private boolean isOnScreen(int x, int y) {
+		if (x >= 0 && x < this.width && y >= 0 && y < height)
+			return true;
+		else return false;
+	}
+	
+	@Deprecated
 	private void paintPixel(int position, int color) {
 		if (isValidPixel(position)) {
 			int trans = ((color >> 24) & 0xff);
@@ -58,6 +75,11 @@ public class Screen {
 				pixels[position] = applyTransparency(color, pixels[position]);
 			}
 		}
+	}
+	
+	private void paintPixel(int x, int y, int color) {
+		if (isOnScreen(x, y))
+			paintPixel(x + y * this.width, color);
 	}
 	
 	/**
@@ -74,7 +96,7 @@ public class Screen {
 		int h = sprite.getHeight();
 		for (int y = 0; y < h; y++) {
 			for (int x = 0; x < w; x++) {
-				paintPixel((x + xp) + (y+yp) * width, sprite.getPixel(x, y));
+				paintPixel(x + xp, y + yp, sprite.getPixel(x, y));
 			}
 		}
 	}
@@ -90,7 +112,7 @@ public class Screen {
 	public void renderSquare(int xp, int yp, int w, int h, int color) {
 		for (int y = 0; y < h; y++) {
 			for (int x = 0; x < w; x++) {
-				paintPixel((x+xp) + (y+yp) * width, color);
+				paintPixel(x + xp, y +yp, color);
 			}
 		}
 	}
@@ -108,7 +130,7 @@ public class Screen {
 		int sh = sprite.getHeight();
 		for (int y = 0; y < height; y++) {
 			for (int x = 0; x < width; x++) {
-				paintPixel((x + xp) + (y+yp) * this.width, sprite.getPixel(x*sw/width, y*sh/height));
+				paintPixel(x + xp, y + yp, sprite.getPixel(x * sw / width, y * sh / height));
 			}
 		}
 	}
@@ -130,9 +152,8 @@ public class Screen {
 		for (int y = 0; y < h; y++) {
 			for (int x = 0; x < w; x++) {
 				int c = sprite.getPixel(x, y);
-				int pos = (x + xp) + (y+yp) * width;
 				
-				paintPixelHue(pos, c, hue, saturation);
+				paintPixelHue(x + xp, y + yp, c, hue, saturation);
 			}
 		}
 	}
@@ -150,11 +171,10 @@ public class Screen {
 		int h = sprite.getHeight();
 		for (int y = 0; y < w; y++) {
 			for (int x = 0; x < h; x++) {
-				int col = sprite.getPixel(x + y * w) & 0xffffff;
+				int col = sprite.getPixel(x + y * w);
 				if (color != col)
-					pixels[(x + xp) + (y+yp) * width] = col;
+					paintPixel(x + xp, y + yp, col);
 			}
 		}
 	}
-	
 }

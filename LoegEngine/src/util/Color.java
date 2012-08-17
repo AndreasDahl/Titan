@@ -1,4 +1,4 @@
-package gfx;
+package util;
 
 public class Color {
 

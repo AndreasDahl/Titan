@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="31" version="2.0">
+<workbench progressCount="28" version="2.0">
 <workbenchAdvisor/>
 <window height="1032" maximized="true" width="960" x="0" y="0">
 <fastViewData fastViewLocation="1024">
@@ -34,56 +34,48 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.internal.EditorStack@4d892648" ratio="0.4996938" ratioLeft="816" ratioRight="817" relationship="2" relative="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Key.java" partName="Key.java" path="C:/Users/Andreas/Documents/GitHub/Titan/LoegEngine/src/controller/Key.java" title="Key.java" tooltip="LoegEngine/src/controller/Key.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LoegEngine/src/controller/Key.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="650" selectionTopPixel="220"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Point.java" partName="Point.java" path="C:/Users/Andreas/Documents/GitHub/Titan/LoegEngine/src/util/Point.java" title="Point.java" tooltip="LoegEngine/src/util/Point.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LoegEngine/src/util/Point.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="498" selectionTopPixel="405"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InputHandler.java" partName="InputHandler.java" path="C:/Users/Andreas/Documents/GitHub/Titan/LoegEngine/src/controller/InputHandler.java" title="InputHandler.java" tooltip="LoegEngine/src/controller/InputHandler.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LoegEngine/src/controller/InputHandler.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="119" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PointTest.java" partName="PointTest.java" path="C:/Users/Andreas/Documents/GitHub/Titan/LoegEngine/src/test/PointTest.java" title="PointTest.java" tooltip="LoegEngine/src/test/PointTest.java" workbook="org.eclipse.ui.internal.EditorStack@4d892648">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LoegEngine/src/test/PointTest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="80" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Game.java" partName="Game.java" path="C:/Users/Andreas/Documents/GitHub/Titan/TitanGame/src/logic/Game.java" title="Game.java" tooltip="TitanGame/src/logic/Game.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TitanGame/src/logic/Game.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="690" selectionTopPixel="365"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GamePanel.java" partName="GamePanel.java" path="C:/Users/Andreas/Documents/GitHub/Titan/LoegEngine/src/gfx/GamePanel.java" title="GamePanel.java" tooltip="LoegEngine/src/gfx/GamePanel.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LoegEngine/src/gfx/GamePanel.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2801" selectionTopPixel="1925"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameWindow.java" partName="GameWindow.java" path="C:/Users/Andreas/Documents/GitHub/Titan/TitanGame/src/gfx/GameWindow.java" title="GameWindow.java" tooltip="TitanGame/src/gfx/GameWindow.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TitanGame/src/gfx/GameWindow.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="911" selectionTopPixel="120"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Hero.java" partName="Hero.java" path="C:/Users/Andreas/Documents/GitHub/Titan/TitanGame/src/logic/Hero.java" title="Hero.java" tooltip="TitanGame/src/logic/Hero.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TitanGame/src/logic/Hero.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="823" selectionTopPixel="325"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameComponent.java" partName="GameComponent.java" path="C:/Users/Andreas/Documents/GitHub/Titan/LoegEngine/src/gfx/GameComponent.java" title="GameComponent.java" tooltip="LoegEngine/src/gfx/GameComponent.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LoegEngine/src/gfx/GameComponent.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="169" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Entity.java" partName="Entity.java" path="C:/Users/Andreas/Documents/GitHub/Titan/TitanGame/src/logic/Entity.java" title="Entity.java" tooltip="TitanGame/src/logic/Entity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TitanGame/src/logic/Entity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Screen.java" partName="Screen.java" path="C:/Users/Andreas/Documents/GitHub/Titan/LoegEngine/src/gfx/Screen.java" title="Screen.java" tooltip="LoegEngine/src/gfx/Screen.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LoegEngine/src/gfx/Screen.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1285" selectionTopPixel="85"/>
+<editor focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Art.java" partName="Art.java" path="C:/Users/Andreas/Documents/GitHub/Titan/TitanGame/src/gfx/Art.java" title="Art.java" tooltip="TitanGame/src/gfx/Art.java" workbook="org.eclipse.ui.internal.EditorStack@4d892648">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TitanGame/src/gfx/Art.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="257" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
+<view id="org.eclipse.jdt.callhierarchy.view" partName="Call Hierarchy">
+<viewState search_scope_type="1"/>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ResourceNavigator" partName="Navigator">
 <viewState LINK_NAVIGATOR_TO_EDITOR="0" sorter="1">
 <filters>&#x0A;<filter element="*.class" isEnabled="false"/>
@@ -94,13 +86,15 @@
 <element path="/TitanGame/src"/>
 <element path="/TitanGame/src/logic"/>
 </expanded>
+<selection>&#x0A;<element path="/TitanGame/src/logic/Grass.java"/>
+</selection>
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
-<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Warnings (9 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="120" org.eclipse.ui.ide.markerType="120" org.eclipse.ui.ide.pathField="160" org.eclipse.ui.ide.resourceField="120" org.eclipse.ui.ide.severityAndDescriptionField="400"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -109,9 +103,6 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -142,6 +133,9 @@
 </customFilters>
 </viewState>
 </view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List">
 <viewState linkWithEditor="true" presentation="org.eclipse.mylyn.tasks.ui.categorized">
 <sorter groupBy="CATEGORY_QUERY">&#x0A;<sorter>&#x0A;<sort0 sortDirection="1" sortKey="PRIORITY"/>
@@ -156,9 +150,6 @@
 </sorter>
 <filteredTreeFindHistory/>
 </viewState>
-</view>
-<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
-<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
@@ -228,6 +219,7 @@
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.jdt.callhierarchy.view"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@2ce43e62" orientation="512" selectedTabId="org.eclipse.mylyn.tasks.ui.views.tasks" style="0">
 <fastViews>
@@ -265,13 +257,14 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.249499" ratioLeft="249" ratioRight="749" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.13230605" ratioLeft="249" ratioRight="1633" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.6868132" ratioLeft="625" ratioRight="285" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.jdt.callhierarchy.view" label="Call Hierarchy"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
@@ -280,6 +273,7 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
@@ -301,169 +295,253 @@
 </mainWindow>
 </layout>
 </perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
+<alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.wb.core.ui.actionset"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.jdt.debug.ui.DisplayView"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<perspective_action id="org.eclipse.wst.xml.ui.perspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.74960214" ratioLeft="1413" ratioRight="472" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7491785" ratioLeft="684" ratioRight="229" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
+<page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.4488304" ratioLeft="307" ratioRight="377" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.74960214" ratioLeft="1413" ratioRight="472" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.49973476" ratioLeft="942" ratioRight="943" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
 </perspectives>
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LoegEngine/src/controller/Key.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LoegEngine/src/controller/InputHandler.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TitanGame/src/logic/Game.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LoegEngine/src/gfx/GamePanel.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TitanGame/src/gfx/GameWindow.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TitanGame/src/logic/Hero.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LoegEngine/src/gfx/GameComponent.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TitanGame/src/logic/Entity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LoegEngine/src/gfx/Screen.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TitanGame/src/logic/entity/Unit.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TitanGame/src/logic/entity/Mob.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LoegEngine/src/util/Color.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LoegEngine/src/util/Point.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LoegEngine/src/test/PointTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LoegEngine/src/test/PointTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TitanGame/src/gfx/Art.java"/>
 </editors>
-<item historyLabel="InputHandler.java" index="1">
-<position/>
+<item historyLabel="Unit.java" index="0">
+<position info="not_deleted" x="280" y="0"/>
 </item>
-<item historyLabel="Key.java" index="0">
-<position info="not_deleted" x="554" y="32"/>
+<item historyLabel="Mob.java" index="1">
+<position info="not_deleted" x="199" y="0"/>
 </item>
-<item historyLabel="Key.java" index="0">
-<position info="not_deleted" x="554" y="0"/>
-</item>
-<item historyLabel="InputHandler.java" index="1">
-<position/>
-</item>
-<item historyLabel="Game.java" index="2">
-<position info="not_deleted" x="603" y="0"/>
-</item>
-<item historyLabel="InputHandler.java" index="1">
-<position/>
-</item>
-<item historyLabel="Hero.java" index="5">
-<position/>
-</item>
-<item historyLabel="Key.java" index="0">
-<position info="not_deleted" x="83" y="0"/>
-</item>
-<item historyLabel="Hero.java" index="5">
-<position/>
-</item>
-<item historyLabel="Hero.java" index="5">
-<position/>
-</item>
-<item historyLabel="Hero.java" index="5">
-<position/>
-</item>
-<item historyLabel="Hero.java" index="5">
-<position/>
-</item>
-<item historyLabel="Hero.java" index="5">
-<position/>
-</item>
-<item historyLabel="Hero.java" index="5">
-<position info="not_deleted" x="1090" y="0"/>
-</item>
-<item historyLabel="Key.java" index="0">
-<position info="not_deleted" x="83" y="0"/>
-</item>
-<item historyLabel="InputHandler.java" index="1">
-<position info="not_deleted" x="1501" y="0"/>
-</item>
-<item historyLabel="GamePanel.java" index="3">
-<position info="not_deleted" x="2559" y="0"/>
-</item>
-<item historyLabel="Hero.java" index="5">
-<position info="not_deleted" x="1090" y="0"/>
-</item>
-<item historyLabel="GameWindow.java" index="4">
-<position info="not_deleted" x="911" y="0"/>
-</item>
-<item historyLabel="Key.java" index="0">
-<position info="not_deleted" x="83" y="0"/>
-</item>
-<item historyLabel="InputHandler.java" index="1">
-<position info="not_deleted" x="1417" y="0"/>
-</item>
-<item historyLabel="Game.java" index="2">
-<position info="not_deleted" x="603" y="0"/>
-</item>
-<item historyLabel="Hero.java" index="5">
-<position info="not_deleted" x="1090" y="0"/>
-</item>
-<item historyLabel="Hero.java" index="5">
-<position info="not_deleted" x="754" y="0"/>
-</item>
-<item historyLabel="Hero.java" index="5">
-<position info="not_deleted" x="823" y="0"/>
-</item>
-<item historyLabel="Key.java" index="0">
-<position info="not_deleted" x="83" y="0"/>
-</item>
-<item historyLabel="InputHandler.java" index="1">
-<position info="not_deleted" x="1417" y="0"/>
-</item>
-<item historyLabel="GamePanel.java" index="3">
-<position info="not_deleted" x="2801" y="0"/>
-</item>
-<item historyLabel="Hero.java" index="5">
-<position info="not_deleted" x="823" y="0"/>
-</item>
-<item historyLabel="Game.java" index="2">
-<position info="not_deleted" x="603" y="0"/>
-</item>
-<item historyLabel="GameWindow.java" index="4">
-<position info="not_deleted" x="911" y="0"/>
-</item>
-<item historyLabel="GamePanel.java" index="3">
-<position info="not_deleted" x="2801" y="0"/>
-</item>
-<item historyLabel="InputHandler.java" index="1">
-<position info="not_deleted" x="950" y="0"/>
-</item>
-<item historyLabel="GameComponent.java" index="6">
+<item historyLabel="Color.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="InputHandler.java" index="1">
-<position info="not_deleted" x="119" y="0"/>
+<item historyLabel="Point.java" index="3">
+<position info="not_deleted" x="932" y="0"/>
 </item>
-<item historyLabel="Key.java" index="0">
-<position info="not_deleted" x="83" y="0"/>
+<item historyLabel="Point.java" index="3">
+<position info="not_deleted" x="750" y="0"/>
 </item>
-<item historyLabel="GameComponent.java" index="6">
-<position info="not_deleted" x="169" y="0"/>
+<item historyLabel="Mob.java" index="1">
+<position info="not_deleted" x="199" y="0"/>
 </item>
-<item historyLabel="Game.java" index="2">
-<position info="not_deleted" x="603" y="0"/>
+<item historyLabel="Point.java" index="3">
+<position info="not_deleted" x="750" y="0"/>
 </item>
-<item historyLabel="Game.java" index="2">
-<position info="not_deleted" x="1091" y="0"/>
+<item historyLabel="Point.java" index="3">
+<position info="not_deleted" x="928" y="0"/>
 </item>
-<item historyLabel="GameWindow.java" index="4">
-<position info="not_deleted" x="911" y="0"/>
+<item historyLabel="Point.java" index="3">
+<position info="not_deleted" x="926" y="0"/>
 </item>
-<item historyLabel="Entity.java" index="7">
+<item historyLabel="PointTest.java" index="4">
+<position/>
+</item>
+<item historyLabel="Point.java" index="3">
+<position info="not_deleted" x="926" y="0"/>
+</item>
+<item historyLabel="PointTest.java" index="4">
+<position info="not_deleted" x="224" y="28"/>
+</item>
+<item historyLabel="Point.java" index="3">
+<position info="not_deleted" x="926" y="0"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Game.java" index="2">
-<position info="not_deleted" x="690" y="10"/>
+<item historyLabel="PointTest.java" index="5">
+<position/>
 </item>
-<item historyLabel="Hero.java" index="5">
-<position info="not_deleted" x="823" y="0"/>
+<item historyLabel="PointTest.java" index="5">
+<position/>
 </item>
-<item historyLabel="InputHandler.java" index="1">
-<position info="not_deleted" x="119" y="0"/>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="415" y="0"/>
 </item>
-<item historyLabel="Key.java" index="0">
-<position info="not_deleted" x="83" y="0"/>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="446" y="0"/>
 </item>
-<item historyLabel="Screen.java" index="8">
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="568" y="0"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="612" y="0"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="600" y="0"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="612" y="0"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="1118" y="0"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="582" y="32"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="677" y="1"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="934" y="1"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="1113" y="0"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="972" y="1"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="1113" y="0"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="1033" y="1"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="1113" y="0"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="1073" y="0"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="1111" y="0"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="1110" y="0"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="1113" y="0"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="632" y="0"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="947" y="38"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="849" y="0"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="1009" y="0"/>
+</item>
+<item historyLabel="Point.java" index="3">
+<position info="not_deleted" x="926" y="0"/>
+</item>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="1124" y="0"/>
+</item>
+<item historyLabel="Art.java" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Screen.java" index="8">
-<position info="not_deleted" x="1435" y="0"/>
+<item historyLabel="Art.java" index="6">
+<position info="not_deleted" x="777" y="0"/>
 </item>
-<item historyLabel="Screen.java" index="8">
-<position info="not_deleted" x="890" y="0"/>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="1124" y="0"/>
 </item>
-<item historyLabel="Screen.java" index="8">
-<position info="not_deleted" x="1293" y="0"/>
+<item historyLabel="PointTest.java" index="5">
+<position info="not_deleted" x="80" y="0"/>
 </item>
-<item active="true" historyLabel="Screen.java" index="8">
-<position info="not_deleted" x="1526" y="29"/>
+<item historyLabel="Point.java" index="3">
+<position info="not_deleted" x="625" y="0"/>
+</item>
+<item historyLabel="Art.java" index="6">
+<position info="not_deleted" x="257" y="0"/>
+</item>
+<item historyLabel="Point.java" index="3">
+<position info="not_deleted" x="458" y="0"/>
+</item>
+<item historyLabel="Art.java" index="6">
+<position info="not_deleted" x="257" y="0"/>
+</item>
+<item active="true" historyLabel="Point.java" index="3">
+<position info="not_deleted" x="498" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -487,47 +565,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Screen.java" tooltip="LoegEngine/src/gfx/Screen.java">
-<persistable path="/LoegEngine/src/gfx/Screen.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Art.java" tooltip="TitanGame/src/gfx/Art.java">
+<persistable path="/TitanGame/src/gfx/Art.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Entity.java" tooltip="TitanGame/src/logic/Entity.java">
-<persistable path="/TitanGame/src/logic/Entity.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PointTest.java" tooltip="LoegEngine/src/test/PointTest.java">
+<persistable path="/LoegEngine/src/test/PointTest.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameComponent.java" tooltip="LoegEngine/src/gfx/GameComponent.java">
-<persistable path="/LoegEngine/src/gfx/GameComponent.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Mob.java" tooltip="TitanGame/src/logic/entity/Mob.java">
+<persistable path="/TitanGame/src/logic/entity/Mob.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Hero.java" tooltip="TitanGame/src/logic/Hero.java">
-<persistable path="/TitanGame/src/logic/Hero.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Unit.java" tooltip="TitanGame/src/logic/entity/Unit.java">
+<persistable path="/TitanGame/src/logic/entity/Unit.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameWindow.java" tooltip="TitanGame/src/gfx/GameWindow.java">
-<persistable path="/TitanGame/src/gfx/GameWindow.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Grass.java" tooltip="TitanGame/src/logic/Grass.java">
+<persistable path="/TitanGame/src/logic/Grass.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GamePanel.java" tooltip="LoegEngine/src/gfx/GamePanel.java">
-<persistable path="/LoegEngine/src/gfx/GamePanel.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sprite.java" tooltip="LoegEngine/src/gfx/Sprite.java">
+<persistable path="/LoegEngine/src/gfx/Sprite.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Game.java" tooltip="TitanGame/src/logic/Game.java">
-<persistable path="/TitanGame/src/logic/Game.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Terrain.java" tooltip="TitanGame/src/logic/Terrain.java">
+<persistable path="/TitanGame/src/logic/Terrain.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InputHandler.java" tooltip="LoegEngine/src/controller/InputHandler.java">
-<persistable path="/LoegEngine/src/controller/InputHandler.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Color.java" tooltip="LoegEngine/src/gfx/Color.java">
+<persistable path="/LoegEngine/src/gfx/Color.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Key.java" tooltip="LoegEngine/src/controller/Key.java">
-<persistable path="/LoegEngine/src/controller/Key.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Renderable.java" tooltip="LoegEngine/src/gfx/Renderable.java">
+<persistable path="/LoegEngine/src/gfx/Renderable.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Matrix.java" tooltip="TitanGame/src/util/Matrix.java">
-<persistable path="/TitanGame/src/util/Matrix.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Point.java" tooltip="LoegEngine/src/util/Point.java">
+<persistable path="/LoegEngine/src/util/Point.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Point.java" tooltip="TitanGame/src/util/Point.java">
-<persistable path="/TitanGame/src/util/Point.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Snippet.java" tooltip="LoegEngine/src/snippet/Snippet.java">
+<persistable path="/LoegEngine/src/snippet/Snippet.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Direction.java" tooltip="TitanGame/src/util/Direction.java">
-<persistable path="/TitanGame/src/util/Direction.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Circle.java" tooltip="TitanGame/src/util/Circle.java">
+<persistable path="/TitanGame/src/util/Circle.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Keys.java" tooltip="TitanGame/src/control/Keys.java">
-<persistable path="/TitanGame/src/control/Keys.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Square.java" tooltip="TitanGame/src/util/Square.java">
+<persistable path="/TitanGame/src/util/Square.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Game.java" tooltip="TitanGame/src/main/Game.java">
-<persistable path="/TitanGame/src/main/Game.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Shape.java" tooltip="TitanGame/src/util/Shape.java">
+<persistable path="/TitanGame/src/util/Shape.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Entity.java" tooltip="TitanGame/src/logic/entity/Entity.java">
+<persistable path="/TitanGame/src/logic/entity/Entity.java"/>
 </file>
 </mruList>
 </workbench>

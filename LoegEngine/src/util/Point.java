@@ -33,4 +33,16 @@ public class Point {
 	public Point translate(Point otherPoint) {
 		return translate(otherPoint.x, otherPoint.y);
 	}
+
+	public double distance(Point otherPoint) {
+		return Math.sqrt((this.x - otherPoint.x) ^2 + (this.y - otherPoint.y) ^2);
+	}
+	
+	public Point translate(double angle, double distance) {
+		return new Point((int)(x + distance / Math.cos(angle)), (int)(y + distance / Math.sin(angle)));
+	}
+	
+	public double angleBetween(Point otherPoint) {
+		return Math.tan((double)(this.y - otherPoint.y) / (double)(this.x - otherPoint.x));
+	}
 }

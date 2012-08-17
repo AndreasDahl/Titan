@@ -2,6 +2,8 @@ package gfx;
 
 import java.awt.image.BufferedImage;
 
+import util.Color;
+
 public class Sprite {
 	private int width, height;
 	private int[] pixels;
