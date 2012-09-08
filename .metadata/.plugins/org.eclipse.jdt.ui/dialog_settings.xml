@@ -49,7 +49,9 @@
 		<item value="false" key="renameSubpackages"/>
 		<item value="false" key="updateQualifiedNames"/>
 		<item value="*" key="patterns"/>
+		<item value="1" key="updateSimilarElementsMatchStrategy"/>
 		<item value="false" key="updateTextualMatches"/>
+		<item value="false" key="updateSimilarElements"/>
 	</section>
 	<section name="SearchInDialog">
 		<item value="true" key="SearchInJRE"/>

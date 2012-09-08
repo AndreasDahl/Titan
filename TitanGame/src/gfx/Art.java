@@ -11,6 +11,8 @@ public class Art {
 	
 	public static final Sprite GRASS = loadSprite("grass.png", 16, 16);
 	
+	public static final Sprite ROCK = loadSprite("rock.png", 16, 16);
+	
 	public static Sprite loadSprite(String url, int width, int height) {
 		File file = new File("res\\" + url);
 		Sprite sprite;

@@ -1,5 +1,7 @@
-package logic.entity;
+package logic.entity.unit;
 
+import logic.Room;
+import logic.entity.Unit;
 import util.Point;
 import controller.InputHandler;
 import gfx.Art;
@@ -8,8 +10,9 @@ import gfx.Screen;
 
 public class Hero extends Unit {
 
-	public Hero() {
-		super(1);
+	public Hero(Room room) {
+		super(room);
+		setCollisionRadius(8);
 	}
 	
 	public void moveTo(Point point) {
@@ -38,22 +41,21 @@ public class Hero extends Unit {
 		
 		while (GameWindow.w.next());
 		if (GameWindow.w.isPressed())
-			relativePoint.translate(0, -1);
+			relativePoint = relativePoint.translate(0, -1);
 		while (GameWindow.a.next());
 		if (GameWindow.a.isPressed())
-			relativePoint.translate(-1, 0);
+			relativePoint = relativePoint.translate(-1, 0);
 		while (GameWindow.s.next());
 		if (GameWindow.s.isPressed())
-			relativePoint.translate(0, 1);
+			relativePoint = relativePoint.translate(0, 1);
 		while (GameWindow.d.next());
 		if (GameWindow.d.isPressed())
-			relativePoint.translate(1, 0);
-		moveTo(getPosition().translate(relativePoint));
+			relativePoint = relativePoint.translate(1, 0);
+		tryMove(getPosition().translate(relativePoint));
 	}
 	
 	@Override
 	public void render(Screen screen) {
-		super.render(screen);
 		screen.renderWidthInvisColor(this.getX(), this.getY(), Art.HERO, 0xffffffff);
 	}
 }

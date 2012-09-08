@@ -1,12 +1,14 @@
-package logic.entity;
+package logic.entity.unit;
 
+import logic.Room;
+import logic.entity.Unit;
 import util.Point;
 import gfx.Art;
 import gfx.Screen;
 
 public class Mob extends Unit {
-	public Mob() {
-		super(1);
+	public Mob(Room room) {
+		super(room);
 	}
 	
 	private void moveTorwards(Point point) {
@@ -15,8 +17,6 @@ public class Mob extends Unit {
 	
 	@Override
 	public void render(Screen screen) {
-		super.render(screen);
-		
 		screen.render(this.getX(), this.getY(), Art.ORC);
 	}
 }

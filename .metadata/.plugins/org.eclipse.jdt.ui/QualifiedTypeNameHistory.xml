@@ -22,10 +22,19 @@
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="gfx.GameWindow"/>
-<fullyQualifiedTypeName name="gfx.Renderable"/>
 <fullyQualifiedTypeName name="logic.Terrain"/>
 <fullyQualifiedTypeName name="gfx.Sprite"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="logic.entity.Doodad"/>
+<fullyQualifiedTypeName name="gfx.Renderable"/>
 <fullyQualifiedTypeName name="gfx.Art"/>
+<fullyQualifiedTypeName name="logic.entity.Rock"/>
+<fullyQualifiedTypeName name="logic.Entity"/>
 <fullyQualifiedTypeName name="util.Point"/>
+<fullyQualifiedTypeName name="logic.Room"/>
+<fullyQualifiedTypeName name="logic.entity.Collidable"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="util.Vector"/>
+<fullyQualifiedTypeName name="util.Angle"/>
 </qualifiedTypeNameHistroy>

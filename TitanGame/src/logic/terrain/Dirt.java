@@ -1,10 +1,10 @@
-package logic;
+package logic.terrain;
 
 import gfx.Art;
 import gfx.Screen;
 import gfx.Sprite;
 
-public class Grass extends Terrain {
+public class Dirt extends Terrain {
 
 	@Override
 	public void render(Screen screen) {

@@ -6,7 +6,7 @@ import gfx.GamePanel;
 
 import javax.swing.JFrame;
 
-import logic.Game;
+import logic.Room;
 
 import controller.InputHandler;
 import controller.Key;
@@ -16,8 +16,9 @@ public class GameWindow extends GamePanel {
 	private static final int WIDTH = 160;
 	private static final int HEIGHT = 160;
 	private static InputHandler input;
+	public static JFrame frame;
 	
-	private Game game;
+	private Room game;
 	public static Key w, a, s, d;
 	
 	public GameWindow(int width, int height) {
@@ -28,7 +29,7 @@ public class GameWindow extends GamePanel {
 	}
 	
 	private void initGame() {
-		game = new Game();
+		game = new Room();
 		setComponent(game);
 	}
 	
@@ -47,7 +48,7 @@ public class GameWindow extends GamePanel {
 	}
 	
 	public static void main(String[] args) {
-		JFrame frame = new JFrame();
+		frame = new JFrame();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		GamePanel gp = new GameWindow(WIDTH, HEIGHT);
 		frame.add(gp);

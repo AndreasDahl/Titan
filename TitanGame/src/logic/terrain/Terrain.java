@@ -1,4 +1,4 @@
-package logic;
+package logic.terrain;
 
 import gfx.Renderable;
 import gfx.Screen;
