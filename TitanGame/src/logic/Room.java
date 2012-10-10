@@ -44,7 +44,7 @@ public class Room extends GameComponent {
 	}
 	
 	public Terrain getTile(Point point) {
-		return grid[point.getX()][point.getY()];
+		return grid[(int)point.getX()][(int)point.getY()];
 	}
 	
 	@Override
@@ -82,9 +82,9 @@ public class Room extends GameComponent {
 		return false;
 	}
 	
-	public boolean collide(Collidable collidable) {
+	public boolean collide(Collidable collidable, Point point) {
 		for (Doodad doodad : doodads) {
-			if (doodad != collidable && collidable.collide(doodad))
+			if (doodad != collidable && doodad.collide(collidable, point))
 				return true;
 		}
 		return false;

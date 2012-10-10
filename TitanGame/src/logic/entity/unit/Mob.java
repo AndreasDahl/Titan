@@ -17,6 +17,6 @@ public class Mob extends Unit {
 	
 	@Override
 	public void render(Screen screen) {
-		screen.render(this.getX(), this.getY(), Art.ORC);
+		screen.render((int)this.getX(), (int)this.getY(), Art.ORC);
 	}
 }

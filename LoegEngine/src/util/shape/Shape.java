@@ -24,9 +24,7 @@ public abstract class Shape {
 		return isIn(point.getX(), point.getY());
 	}
 	
-	public boolean isIn(int x, int y) {
-		if (inBound(x, y))
-			return fill[(y - position.getY()) * width + (x - position.getX())];
+	public boolean isIn(double x, double y) {
 		return false;
 	}
 	

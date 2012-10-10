@@ -31,4 +31,9 @@ public class Angle {
 	public double getAngle() {
 		return this.angle;
 	}
+	
+	@Override
+	public String toString() {
+		return "Angle: " + angle;
+	}
 }

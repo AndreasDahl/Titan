@@ -3,6 +3,7 @@ package logic.entity.unit;
 import logic.Room;
 import logic.entity.Unit;
 import util.Point;
+import util.Vector;
 import controller.InputHandler;
 import gfx.Art;
 import gfx.GameWindow;
@@ -37,25 +38,23 @@ public class Hero extends Unit {
 	@Override
 	public void tick(InputHandler input) {
 		super.tick(input);
-		Point relativePoint = new Point(0,0);
 		
 		while (GameWindow.w.next());
 		if (GameWindow.w.isPressed())
-			relativePoint = relativePoint.translate(0, -1);
+			this.accelerate(new Vector(0,1));
 		while (GameWindow.a.next());
 		if (GameWindow.a.isPressed())
-			relativePoint = relativePoint.translate(-1, 0);
+			this.accelerate(new Vector(-1, 0));
 		while (GameWindow.s.next());
 		if (GameWindow.s.isPressed())
-			relativePoint = relativePoint.translate(0, 1);
+			this.accelerate(new Vector(0, -1));
 		while (GameWindow.d.next());
 		if (GameWindow.d.isPressed())
-			relativePoint = relativePoint.translate(1, 0);
-		tryMove(getPosition().translate(relativePoint));
+			this.accelerate(new Vector(1, 0));
 	}
 	
 	@Override
 	public void render(Screen screen) {
-		screen.renderWidthInvisColor(this.getX(), this.getY(), Art.HERO, 0xffffffff);
+		screen.renderWidthInvisColor((int)this.getX(), (int)this.getY(), Art.HERO, 0xffffffff);
 	}
 }

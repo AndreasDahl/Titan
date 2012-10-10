@@ -94,6 +94,8 @@ public class Screen {
 	public void render(int xp, int yp, Sprite sprite) {
 		int w = sprite.getWidth();
 		int h = sprite.getHeight();
+		yp = this.height - yp;
+		yp-=h;
 		for (int y = 0; y < h; y++) {
 			for (int x = 0; x < w; x++) {
 				paintPixel(x + xp, y + yp, sprite.getPixel(x, y));
@@ -110,6 +112,8 @@ public class Screen {
 	 * @param color Color of the square
 	 */
 	public void renderSquare(int xp, int yp, int w, int h, int color) {
+		yp = this.height - yp;
+		yp-=h;
 		for (int y = 0; y < h; y++) {
 			for (int x = 0; x < w; x++) {
 				paintPixel(x + xp, y +yp, color);
@@ -128,6 +132,8 @@ public class Screen {
 	public void render(int xp, int yp, int height, int width, Sprite sprite) {
 		int sw = sprite.getWidth();
 		int sh = sprite.getHeight();
+		yp = this.height - yp;
+		yp-=height;
 		for (int y = 0; y < height; y++) {
 			for (int x = 0; x < width; x++) {
 				paintPixel(x + xp, y + yp, sprite.getPixel(x * sw / width, y * sh / height));
@@ -146,6 +152,8 @@ public class Screen {
 	public void renderHue(int xp, int yp, Sprite sprite, int hueColor) {
 		int w = sprite.getWidth();
 		int h = sprite.getHeight();
+		yp = this.height - yp;
+		yp-=h;
 		
 		double hue = Color.getHue(hueColor);
 		double saturation = (hueColor >> 24 & 0xff) / 255.0;
@@ -169,6 +177,8 @@ public class Screen {
 	public void renderWidthInvisColor(int xp, int yp, Sprite sprite, int color) {
 		int w = sprite.getWidth();
 		int h = sprite.getHeight();
+		yp = this.height - yp;
+		yp -= h;
 		for (int y = 0; y < w; y++) {
 			for (int x = 0; x < h; x++) {
 				int col = sprite.getPixel(x + y * w);

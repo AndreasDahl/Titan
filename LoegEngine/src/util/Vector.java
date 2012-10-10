@@ -1,23 +1,23 @@
 package util;
 
 public class Vector {
-	private int x, y;
+	private double x, y;
 	
-	public Vector(int x, int y) {
+	public Vector(double x, double y) {
 		this.x = x;
 		this.y = y;
 	}
 	
-	public int getX() {
+	public double getX() {
 		return x;
 	}
 	
-	public int getY() {
+	public double getY() {
 		return y;
 	}
 	
 	public double length() {
-		return Point.OREGO.distance(new Point(x, y));
+		return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
 	}
 	
 	@Override
@@ -39,16 +39,22 @@ public class Vector {
 	}
 	
 	public Vector scale(double scale) {
-		return new Vector((int)(x * scale), (int)(y * scale));
+		return new Vector((x * scale), (y * scale));
 	}
 	
-	public int dot(Vector otherVector) {
+	public double dot(Vector otherVector) {
 		return x * otherVector.x + y * otherVector.y;
 	}
 	
 	public Angle angle() {
-		return Point.OREGO.angleBetween(new Point(this.x, this.y));
+		double angle = Math.toDegrees(Math.atan(this.y / this.x));
+		if (y >= 0) angle += 90;
+		else angle -= 90;
+		return new Angle(angle);
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Vector: (" + x + ", " + y + ")";
+	}
 }

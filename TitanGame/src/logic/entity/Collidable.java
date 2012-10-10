@@ -1,8 +1,8 @@
 package logic.entity;
 
-import gfx.Screen;
 import logic.Entity;
 import logic.Room;
+import util.Angle;
 import util.Point;
 
 public abstract class Collidable extends Entity {
@@ -24,8 +24,13 @@ public abstract class Collidable extends Entity {
 		return getPosition().distance(point) < collisionRadius;
 	}
 	
-	public boolean collide(Collidable collidable) {
-		return getPosition().distance(collidable.getPosition()) < collisionRadius + collidable.collisionRadius;
+	public boolean collide(Collidable collidable, Point point) {
+		if (getPosition().distance(collidable.getPosition()) < collisionRadius + collidable.collisionRadius) {
+			Angle angle = this.getPosition().angleBetween(point);
+			collidable.setPosition(this.getPosition().translateAngle(angle, collisionRadius+ collidable.collisionRadius));
+			return true;
+		}
+		return false;
 	}
 	
 }

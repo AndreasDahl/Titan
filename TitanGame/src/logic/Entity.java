@@ -1,7 +1,7 @@
 package logic;
 
 import gfx.Renderable;
-import gfx.Screen;
+
 import controller.InputHandler;
 import util.Point;
 
@@ -26,11 +26,11 @@ public abstract class Entity implements Renderable {
 		this.position = position;
 	}
 
-	public int getX() {
+	public double getX() {
 		return position.getX();
 	}
 	
-	public int getY() {
+	public double getY() {
 		return position.getY();
 	}
 	

@@ -18,7 +18,6 @@
 <fullyQualifiedTypeName name="java.lang.Deprecated"/>
 <fullyQualifiedTypeName name="gfx.Screen"/>
 <fullyQualifiedTypeName name="util.Shape"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="gfx.GameWindow"/>
@@ -37,4 +36,5 @@
 <fullyQualifiedTypeName name="org.junit.Before"/>
 <fullyQualifiedTypeName name="util.Vector"/>
 <fullyQualifiedTypeName name="util.Angle"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
 </qualifiedTypeNameHistroy>

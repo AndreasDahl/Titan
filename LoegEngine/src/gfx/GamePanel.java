@@ -171,4 +171,6 @@ public class GamePanel extends Canvas implements Runnable {
 	public int getScreenHeight() {
 		return screenHeight;
 	}
+	
+	
 }

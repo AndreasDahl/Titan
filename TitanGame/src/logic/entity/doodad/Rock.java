@@ -14,6 +14,6 @@ public class Rock extends Doodad {
 	
 	@Override
 	public void render(Screen screen) {
-		screen.render(this.getX(), this.getY(), Art.ROCK);
+		screen.render((int)this.getX(), (int)this.getY(), Art.ROCK);
 	}
 }
