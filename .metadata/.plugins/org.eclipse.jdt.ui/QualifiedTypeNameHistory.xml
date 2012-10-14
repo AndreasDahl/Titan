@@ -30,11 +30,12 @@
 <fullyQualifiedTypeName name="logic.entity.Rock"/>
 <fullyQualifiedTypeName name="logic.Entity"/>
 <fullyQualifiedTypeName name="util.Point"/>
-<fullyQualifiedTypeName name="logic.Room"/>
 <fullyQualifiedTypeName name="logic.entity.Collidable"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="org.junit.Before"/>
-<fullyQualifiedTypeName name="util.Vector"/>
 <fullyQualifiedTypeName name="util.Angle"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="util.Vector"/>
+<fullyQualifiedTypeName name="logic.entity.Unit"/>
+<fullyQualifiedTypeName name="logic.Room"/>
 </qualifiedTypeNameHistroy>

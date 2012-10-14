@@ -4,9 +4,11 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import util.Point;
+import util.Vector;
 
 import logic.entity.Collidable;
 import logic.entity.Doodad;
+import logic.entity.Unit;
 import logic.entity.doodad.Rock;
 import logic.entity.unit.Hero;
 import logic.terrain.Grass;
@@ -74,19 +76,22 @@ public class Room extends GameComponent {
 		GameWindow.frame.setTitle(Integer.toString(GameWindow.getInstance().getFPS()));
 	}
 	
-	public boolean collide(Point point) {
+	public Vector collide(Unit	unit) {
+		Point newPosition = (unit.getPosition().translate(unit.getSpeed()));
+		boolean hasCollided = false;
+		Vector result = unit.getSpeed();
 		for (Doodad doodad : doodads) {
-			if (doodad.collide(point))
-				return true;
+			if ((doodad.getCollisionRadius() + unit.getCollisionRadius()) 
+					>= doodad.getPosition().distance(newPosition)) {
+				result = doodad.collide(unit, unit.getSpeed());
+				
+				if (hasCollided) {
+					result = new Vector(0,0);
+					break;
+				}
+				hasCollided = true;
+			}
 		}
-		return false;
-	}
-	
-	public boolean collide(Collidable collidable, Point point) {
-		for (Doodad doodad : doodads) {
-			if (doodad != collidable && doodad.collide(collidable, point))
-				return true;
-		}
-		return false;
+		return result;
 	}
 }

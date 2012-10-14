@@ -41,16 +41,16 @@ public class Hero extends Unit {
 		
 		while (GameWindow.w.next());
 		if (GameWindow.w.isPressed())
-			this.accelerate(new Vector(0,1));
+			this.accelerate(new Vector(0,0.5));
 		while (GameWindow.a.next());
 		if (GameWindow.a.isPressed())
-			this.accelerate(new Vector(-1, 0));
+			this.accelerate(new Vector(-0.5, 0));
 		while (GameWindow.s.next());
 		if (GameWindow.s.isPressed())
-			this.accelerate(new Vector(0, -1));
+			this.accelerate(new Vector(0, -0.5));
 		while (GameWindow.d.next());
 		if (GameWindow.d.isPressed())
-			this.accelerate(new Vector(1, 0));
+			this.accelerate(new Vector(0.5, 0));
 	}
 	
 	@Override

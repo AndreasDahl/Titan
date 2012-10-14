@@ -8,6 +8,11 @@ public class Vector {
 		this.y = y;
 	}
 	
+	public Vector(Angle angle, double length) {
+		this(length * Math.cos(Math.toRadians(angle.getAngle())),
+				length * Math.sin(Math.toRadians(angle.getAngle())));
+	}
+	
 	public double getX() {
 		return x;
 	}

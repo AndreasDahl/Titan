@@ -4,6 +4,7 @@ import logic.Entity;
 import logic.Room;
 import util.Angle;
 import util.Point;
+import util.Vector;
 
 public abstract class Collidable extends Entity {
 	private double collisionRadius = 0;
@@ -24,13 +25,19 @@ public abstract class Collidable extends Entity {
 		return getPosition().distance(point) < collisionRadius;
 	}
 	
-	public boolean collide(Collidable collidable, Point point) {
-		if (getPosition().distance(collidable.getPosition()) < collisionRadius + collidable.collisionRadius) {
-			Angle angle = this.getPosition().angleBetween(point);
-			collidable.setPosition(this.getPosition().translateAngle(angle, collisionRadius+ collidable.collisionRadius));
-			return true;
+	public Vector collide(Collidable collidable, Vector speed) {
+		Angle angle = this.getPosition().angleBetween(collidable.getPosition());
+		Vector directionV;
+		Angle newAngle;
+		if (speed.angle().add(angle).add(new Angle(180)).getAngle() > 180) {
+			newAngle = angle.add(new Angle(90));
 		}
-		return false;
+		else {
+			newAngle = angle.add(new Angle(-90));
+		}
+		directionV = new Vector(newAngle, 1);
+		double newSpeed = speed.dot(directionV);
+		return new Vector(newAngle, newSpeed);
 	}
 	
 }

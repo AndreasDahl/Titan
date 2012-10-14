@@ -33,9 +33,7 @@ public abstract class Unit extends Collidable {
 	}
 	
 	public void tryMove() {
-		Point newPoint = getPosition().translate(speed);
-		if (!this.getRoom().collide(this, newPoint))
-			this.setPosition(newPoint);
-
+		this.speed = this.getRoom().collide(this);
+		this.setPosition(getPosition().translate(speed));
 	}
 }

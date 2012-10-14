@@ -21,7 +21,7 @@ public class GamePanel extends Canvas implements Runnable {
 	private int fps;
 	
 	private double nsPerTick;
-	private boolean running;
+	private boolean running = true;
 	
 	private BufferedImage image;
 	private int[] pixels;

@@ -53,8 +53,8 @@ public class GameWindow extends GamePanel {
 		GamePanel gp = new GameWindow(WIDTH, HEIGHT);
 		frame.add(gp);
 		frame.pack();
-		frame.setVisible(true);
 		frame.addKeyListener(input);
+		frame.setVisible(true);
 		gp.start();
 	}
 }
